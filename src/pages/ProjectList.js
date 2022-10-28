@@ -16,7 +16,7 @@ const ProjectList = () => {
                         data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
                          data-bs-smooth-scroll="true"  tabIndex="0">
                         <div className="card mb-3 w-75 bg-dark text-white background-image: var(--bs-gradient)" id="simple-list-item-1">
-                            <img src="./myPortfolio/#/images/owlSchool.png" className="card-img-top" alt="..."/>
+                            <img src="./images/owlSchool.png" className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -25,7 +25,7 @@ const ProjectList = () => {
                         </div>
                         <br/>
                         <div className="card mb-3 w-75 bg-dark text-white background-image: var(--bs-gradient)" id="simple-list-item-1">
-                            <img src="./myPortfolio/#/images/owlSchool.png" className="card-img-top" alt="..."/>
+                            <img src="./images/owlSchool.png" className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -34,7 +34,7 @@ const ProjectList = () => {
                         </div>
                         <br/>
                         <div className="card mb-3 w-75 bg-dark text-white background-image: var(--bs-gradient)" id="simple-list-item-1">
-                            <img src="./myPortfolio/#/images/owlSchool.png" className="card-img-top" alt="..."/>
+                            <img src="./images/owlSchool.png" className="card-img-top" alt="..."/>
                             <div className="card-body">
                                 <h5 className="card-title">Card title</h5>
                                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
