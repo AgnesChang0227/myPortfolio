@@ -20,13 +20,13 @@ const Slider = () => {
                 <div className="carousel-inner w-75 m-auto bg-dark shadow-lg mb-5 bg-body rounded" style={{padding:"15px"}}>
                     <div style={{cursor:"pointer"}} className="carousel-item active" data-bs-interval="10000"
                          onClick={()=>{navigate("/project/owlSchool")}}>
-                        <img src="./images/owlSchool.png" className="d-block w-100" alt="..."/>
+                        <img src="images/owlSchool.png" className="d-block w-100" alt="..."/>
                     </div>
                     <div style={{cursor:"pointer"}} className="carousel-item" data-bs-interval="2000">
-                        <img src="./images/project7.png" className="d-block w-100" alt="..."/>
+                        <img src="images/project7.png" className="d-block w-100" alt="..."/>
                     </div>
                     <div style={{cursor:"pointer"}} className="carousel-item">
-                        <img src="./images/photoWebsite.png" className="d-block w-100" alt="..."/>
+                        <img src="images/photoWebsite.png" className="d-block w-100" alt="..."/>
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
