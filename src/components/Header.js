@@ -8,7 +8,7 @@ const Header = () => {
             <div className="collapse " id="navbarToggleExternalContent">
                 <div className="bg-dark p-4 d-flex">
                     <div className="d-inline-block">
-                        <img src="./images/icon.jpg" className="rounded-circle "  data-bs-toggle="collapse"style={{width:"100px",display:"inline-block"}} alt=""/>
+                        <img src="./myPortfolio/images/icon.jpg" className="rounded-circle "  data-bs-toggle="collapse"style={{width:"100px",display:"inline-block"}} alt=""/>
                     </div>
                     <div className="d-inline-block" style={{marginLeft:"30px"}}>
                         <h5 className="text-white h4" >Hello! This is Agnes, nice to meet you!</h5>
