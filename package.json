@@ -2,7 +2,6 @@
   "name": "portfolio_website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://agneschang0227.github.io/myPorfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://agneschang0227.github.io/myPorfolio.git -b gh-pages"
+    "deploy": "gh-pages -d dist -r https://github.com/AgnesChang0227/myPortolio.git -b gh-pages"
   },
   "eslintConfig": {
     "extends": [
