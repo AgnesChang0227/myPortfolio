@@ -32,7 +32,8 @@ const ProjectList = () => {
                                 onMouseOver={()=>{setActive(index)}} onMouseLeave={()=>{setActive(false)}}
                                 onClick={() => {navigate(`/project/${project.value}`)
                             }}>
-                                <img src={`./${process.env.REACT_APP_REPO || ''}${project.captureFolder}/homepage.png`}
+                                {/*<img src={`./${process.env.REACT_APP_REPO || ''}${project.captureFolder}/homepage.png`}*/}
+                                <img src={`./${project.captureFolder}/homepage.png`}
                                      className="card-img-top" alt="..."/>
                                 <div className="card-body">
                                     <p className="card-text" style={{color: "gray", float: "right"}}>

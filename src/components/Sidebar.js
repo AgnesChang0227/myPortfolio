@@ -15,8 +15,10 @@ const Sidebar = () => {
                  style={{height:"100vh",}}>
                 <header style={{height:"20vh",marginTop:"2rem"}}>
                     <div className="img-text">
-                        <img src={`./${process.env.REACT_APP_REPO ||""}images/icon.jpg`} alt=""
-                             className="rounded-circle" hidden={!active}
+
+                        {/*<img src={`./${process.env.REACT_APP_REPO ||""}images/icon.jpg`} alt=""*/}
+                        <img src={`./images/icon.jpg`} alt=""
+                        className="rounded-circle" hidden={!active}
                              style={{width:"120px",margin:"auto",borderWidth:"2px",border:"solid 5px #5346ec"}}/>
                     </div>
                     <div className="text-center mt-2 text">
