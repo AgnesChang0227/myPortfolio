@@ -1,6 +1,7 @@
 export const projects = [
     {
         title: "Owl School",
+        value:"owlSchool",
         description: ["An Udemy like online learning website.",
             "Including role: visitor, student, teacher, admin.",
             "Functions : Authentication, Send Email, Create / Edit / Enroll Courses, Upload Image/ Video , Edit Profile..."
@@ -14,6 +15,7 @@ export const projects = [
     },
     {
         title: "Idea Note",
+        value:"ideaNote",
         description: ["Using template engine EJS and Bootstrap to handle pages' appearance.",
             "Using session and cookie to handle the Authentication.",
             "Function:Register, Login, Logout, Add / Edit Note, Upload / Delete Profile Image."
@@ -24,6 +26,7 @@ export const projects = [
     },
     {
         title: "Photo Website",
+        value:"photoWebsite",
         description: ["Show pages with React component and Bootstrap CSS.",
             "Fetch external API to get photos.",
             "Show quantity of related photos which depends on the pagination and LoadMore button.",
@@ -35,6 +38,7 @@ export const projects = [
     },
     {
         title: "Learning System",
+        value:"learningSystem",
         description: ["Show pages with React component and Bootstrap CSS.",
             "Authentication using passport-jwt and passport-local",
             "Function: Register, Login, Logout, Search courses by title, enroll Course, Create course"
@@ -45,6 +49,7 @@ export const projects = [
     },
     {
         title: "Google and Local Login System",
+        value:"googleLoginSystem",
         description: ["Show pages with React component and Bootstrap CSS.",
             "Authentication using passport-jwt and passport-local",
             "Function: Register, Login, Logout, Search courses by title, enroll Course, Create course"

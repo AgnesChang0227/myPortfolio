@@ -5,7 +5,7 @@ const Slider = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div id="carouselExampleDark" className="carousel carousel-dark slide " data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active"
                             aria-current="true" aria-label="Slide 1"></button>
@@ -14,8 +14,8 @@ const Slider = () => {
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                 </div>
-                <div style={{textAlign:"center",textDecoration:"underline",marginTop:"10px",color:"darkslategray"}}>
-                    <h1 >Recent Project</h1>
+                <div style={{textAlign:"center",marginTop:"10px",color:"darkslategray"}}>
+                    <h1 >Recent Projects</h1>
                 </div>
                 <div className="carousel-inner w-75 m-auto bg-dark shadow-lg mb-5 bg-body rounded" style={{padding:"15px"}}>
                     <div style={{cursor:"pointer"}} className="carousel-item active" data-bs-interval="10000"
