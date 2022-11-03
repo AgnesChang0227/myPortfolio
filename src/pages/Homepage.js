@@ -5,8 +5,8 @@ import Header from "../components/Header";
 const Homepage = () => {
     return (
         <>
-            <div style={{backgroundImageL:"Url()"}}></div>
-            {/*<Header/>*/}
+
+            {/*<Slider/>*/}
         </>
     );
 };
