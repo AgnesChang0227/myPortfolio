@@ -1,5 +1,5 @@
-import React from "react";
-import icon from "../images/icon.jpg";
+import React from "react"
+const imagesPath = process.env.PUBLIC_URL+"/images";
 
 const Header = () => {
   return (
@@ -8,11 +8,11 @@ const Header = () => {
       style={{ height: "auto", backgroundColor: "rgba(255,255,255,0.2)" }}
     >
       <img
-        src={icon}
+        src={imagesPath+"/icon.jpeg"}
         className="rounded-circle"
         style={{ height: "20vh" }}
       />
-      <h1 style={{ color: "#fff" }}>Agnes Chang</h1>
+      <h1 style={{ color: "#fff" }}>Chang, Yuen Yi (Agnes)</h1>
       <h4 style={{ color: "#fff" }}>Web developer</h4>
       <h6 style={{ color: "#fff" }}>
         <i className="bi bi-envelope-check-fill" style={{ fontSize: "16px" }}>

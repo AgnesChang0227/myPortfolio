@@ -5,27 +5,16 @@ import ProjectList from "./components/ProjectList"
 import Header from "./components/Header"
 import Resume from "./components/resume"
 
+
 import "./app.css"
 
+const imagesPath = process.env.PUBLIC_URL+"/images";
 
 function App() {
-    //for taking the img's pathname inside the folder
-    // function importAll(r) {
-    //     //// Use these line if you like to access arrays using an integer index.
-    //     let images = [];
-    //     r.keys().map((item, index) => {
-    //         // console.log(item);
-    //         images.push(item);
-    //     });
-    //     return images;
-    // }
-    //
-    // const images = importAll(require.context(`../public/images/photoWebsite`, false, /\.(png|jpe?g|svg)$/));
-    // console.log(images);
     return (
         <div className="col-12 d-flex justify-content-center align-items-center"
              style={{
-                 backgroundImage: "url(./images/bg.jpg)",
+                 backgroundImage: `url(${imagesPath}/bg.jpg)`,
                  backgroundPosition: "center", backgroundSize: "cover", height: "100vh"
              }}>
             <div className="p-3 "

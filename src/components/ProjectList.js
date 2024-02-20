@@ -41,7 +41,7 @@ const ProjectList = () => {
                 <>
                     <div className="carousel-item active">
                         <img
-                            src={`./images/${project.value}/${path}`}
+                            src={`url(../images/${project.value}/${path})`}
                             className="d-block img-fluid" alt="..."/>
                     </div>
                 </>
@@ -50,7 +50,7 @@ const ProjectList = () => {
             <>
                 <div className="carousel-item">
                     <img
-                        src={`./images/${project.value}/${path}`}
+                        src={`../images/${project.value}/${path}`}
                         className="d-block img-fluid" alt="..."/>
                 </div>
             </>
