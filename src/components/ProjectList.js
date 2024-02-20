@@ -3,7 +3,10 @@ import {projects} from "../config/project";
 import {Link, useNavigate} from "react-router-dom";
 import "../app.css";
 
+
 const ProjectList = () => {
+    const imagesPath = process.env.PUBLIC_URL+"/images";
+
     const navigate = useNavigate();
     const top = useRef(null);
     const [active, setActive] = useState(false);
@@ -41,7 +44,7 @@ const ProjectList = () => {
                 <>
                     <div className="carousel-item active">
                         <img
-                            src={`url(../images/${project.value}/${path})`}
+                            src={`${imagesPath}/${project.value}/${path}`}
                             className="d-block img-fluid" alt="..."/>
                     </div>
                 </>
@@ -50,7 +53,7 @@ const ProjectList = () => {
             <>
                 <div className="carousel-item">
                     <img
-                        src={`../images/${project.value}/${path}`}
+                        src={`${imagesPath}/${project.value}/${path}`}
                         className="d-block img-fluid" alt="..."/>
                 </div>
             </>
