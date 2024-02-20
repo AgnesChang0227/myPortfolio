@@ -16,7 +16,6 @@ const ProjectList = () => {
     }
 
     const button = (project, path, index) => {
-        // console.log(path)
         if (path==="./homepage.png") {
             return (
                 <>
