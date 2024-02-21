@@ -4,6 +4,18 @@
     box-sizing: border-box;
     font-family: "Poppins",sans-serif;
 }
+
+/*隱藏滾動條*/
+::-webkit-scrollbar{
+    display: none;
+
+}
+
+a {
+    text-decoration:none;
+    color:#fff ;
+}
+
 /*重複使用的樣式*/
 :root{
     /* 颜色 */

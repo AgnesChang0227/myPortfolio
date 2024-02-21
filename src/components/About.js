@@ -2,11 +2,11 @@ import React from "react"
 
 const imagesPath = process.env.PUBLIC_URL + "/images";
 
-const Header = () => {
+const About = () => {
   return (
     <div
       className="rounded-3 text-center p-3 mb-3"
-      style={{height: "auto", backgroundColor: "rgba(255,255,255,0.2)"}}
+      style={{height: "auto"}}
     >
       <img
         src={imagesPath + "/icon.jpeg"}
@@ -15,7 +15,11 @@ const Header = () => {
       />
       <h1 style={{color: "#fff"}}>Chang, Yuen Yi (Agnes)</h1>
       <h4 style={{color: "#fff"}}>Web developer</h4>
-      <h6 style={{color: "#fff"}}>agneschang0227@gmail.com</h6>
+      <h6 style={{color: "#fff"}}>
+        <i className="bi bi-envelope-open-fill"/>
+        <a className="ms-2" href="www.google.com">agneschang0227@gmail.com</a>
+
+      </h6>
       <br/>
       <div
         className="text-start p-3 text-white rounded-3"
@@ -42,4 +46,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default About;
