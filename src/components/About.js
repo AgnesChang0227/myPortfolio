@@ -2,9 +2,9 @@ import React from "react"
 
 const imagesPath = process.env.PUBLIC_URL + "/images";
 
-const About = () => {
+const About = ({id}) => {
   return (
-    <div
+    <div id={id}
       className="rounded-3 text-center p-3 mb-3"
       style={{minHeight: "100%"}}
     >
@@ -17,7 +17,7 @@ const About = () => {
       <h4 style={{color: "#fff"}}>Web developer</h4>
       <h6 style={{color: "#fff"}}>
         <i className="bi bi-envelope-open-fill"/>
-        <a className="ms-2" href="www.google.com">agneschang0227@gmail.com</a>
+        <a className="ms-2" href="#">agneschang0227@gmail.com</a>
 
       </h6>
       <br/>

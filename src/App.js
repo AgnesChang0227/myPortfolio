@@ -26,8 +26,8 @@ function App() {
              backgroundColor: "rgba(255,255,255,0.25)", width: "90vw", height: "85vh",
              border: "solid 1px transparent", borderRadius: "15px", overflowY: "auto"
            }}>
-        <About/>
-        <ProjectList/>
+        <About id={"about"}/>
+        <ProjectList id={"project"}/>
         {/*<Resume/>*/}
       </div>
 

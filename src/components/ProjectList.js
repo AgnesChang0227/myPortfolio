@@ -4,7 +4,7 @@ import {Link, useNavigate} from "react-router-dom";
 import "../app.css";
 
 
-const ProjectList = () => {
+const ProjectList = ({id}) => {
     const imagesPath = process.env.PUBLIC_URL+"/images";
 
     const navigate = useNavigate();
@@ -60,7 +60,7 @@ const ProjectList = () => {
     }
 
     return (
-        <div className="rounded-3 p-3 mb-3"
+        <div className="rounded-3 p-3 mb-3" id={id}
              style={{height: "100%", backgroundColor: "rgba(0,0,0,0.2)"}}>
             <div style={{height: "100%"}}>
                 <div className="row p-2" style={{height: "100%",overflowY: "auto"}}>
@@ -72,7 +72,7 @@ const ProjectList = () => {
                             {projects && projects.sort((a, b) => {
                                 return b.finishedDate - a.finishedDate
                             }).map((project, index) => (
-                                <a className="p-1 rounded btn text-white"
+                                <a className="p-1 rounded btn nav-link"
                                    href={`#${project.value}`}>{project.title}</a>
                             ))}
                         </div>
@@ -91,7 +91,7 @@ const ProjectList = () => {
                                     {/*card*/}
                                     <div
                                         className="card mb-3 text-white background-image: var(--bs-gradient) data-mdb-attribute w-100"
-                                        style={{height: "100%", backgroundColor: "rgba(0,0,0,0.3)"}}
+                                        style={{minHeight: "100%", backgroundColor: "rgba(0,0,0,0.3)"}}
                                         id={`${project.value}`}>
                                         {/*capture part*/}
                                         <div id={`${project.value}_card`} className="carousel slide pt-3 w-100 "

@@ -11,16 +11,21 @@
     display: none;
 
 }
-
 a {
-    text-decoration:none;
-    color:#fff ;
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: rgba(0,0,0,.55)
+}
+.navbar-light .navbar-nav .nav-link {
+    color:#fff;
 }
 .nav-link{
-    color: #fff
+    color:#fff
 }
 .nav-link:hover{
-    color: #304581
+    color: rgba(0,0,0,.55)
 }
 
 
