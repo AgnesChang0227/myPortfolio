@@ -88,26 +88,31 @@ const ProjectList = () => {
                                 return b.finishedDate - a.finishedDate
                             }).map((project, index) => (
                                 <>
+                                    {/*card*/}
                                     <div
-                                        className="card mb-3 text-white background-image: var(--bs-gradient) data-mdb-attribute"
-                                        style={{width: "100%",minHeight: "100%", backgroundColor: "rgba(0,0,0,0.3)"}}
+                                        className="card mb-3 text-white background-image: var(--bs-gradient) data-mdb-attribute w-100"
+                                        style={{height: "100%", backgroundColor: "rgba(0,0,0,0.3)"}}
                                         id={`${project.value}`}>
-                                        <div id={`${project.value}_card`} className="carousel slide pt-3"
-                                             data-bs-ride="true"  style={{width: "100%"}}>
+                                        {/*capture part*/}
+                                        <div id={`${project.value}_card`} className="carousel slide pt-3 w-100 "
+                                             data-bs-ride="true" >
+                                            {/*pagination*/}
                                             <div className="carousel-indicators mb-0"
                                                  style={{backgroundColor:"rgba(0,0,0,0.2)",borderRadius:"10px"}}>
                                                 {project.capture && project.capture.map((path, index) => {
                                                     return button(project, path, index)
                                                 })}
                                             </div>
-                                            <div className="d-flex justify-content-center">
-                                                <div className="carousel-inner  "
-                                                     style={{height: "40%",width: "70%", overflowY: "auto"}}>
+                                            {/*capture*/}
+                                            <div className="d-flex justify-content-center ">
+                                                <div className="carousel-inner "
+                                                     style={{width: "70%",height:"50vh", overflowY: "auto",}}>
                                                     {project.capture && project.capture.map((path, index) => {
                                                         return image(project, path, index)
                                                     })}
                                                 </div>
                                             </div>
+                                            {/*prev & next btn*/}
                                             <button className="carousel-control-prev" type="button"
                                                     data-bs-target={`#${project.value}_card`}
                                                     data-bs-slide="prev">
@@ -126,6 +131,7 @@ const ProjectList = () => {
                                                 <span className="visually-hidden" >Next</span>
                                             </button>
                                         </div>
+                                        {/*card body => text*/}
                                         <div className="card-body">
                                             <p className="card-text" style={{color: "gray", float: "right"}}>
                                                 {project.finishedDate.toLocaleDateString()}
