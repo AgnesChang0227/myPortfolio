@@ -15,11 +15,22 @@ const About = ({id}) => {
       />
       <h1 style={{color: "#fff"}}>Chang, Yuen Yi (Agnes)</h1>
       <h4 style={{color: "#fff"}}>Web developer</h4>
-      <h6 style={{color: "#fff"}}>
-        <i className="bi bi-envelope-open-fill"/>
-        <a className="ms-2" href="#">agneschang0227@gmail.com</a>
-
-      </h6>
+      <br/>
+      <h5 style={{color: "#fff"}}>
+        <i className="bi bi-file-earmark-person"></i>
+        <a className="ms-2" href="https://drive.google.com/file/d/1TBD_xAj4xiPTuqvEBuO1-BTYYQHoGeNr/view?usp=drive_link" target='_blank'>
+          Resume
+        </a>
+      </h5>
+      <h5 style={{color: "#fff"}}>
+        <i className="bi bi-github"/>
+        <a className="ms-2" href="https://github.com/AgnesChang0227" target='_blank'>
+          AgnesChang0227
+        </a>
+      </h5>
+      <h5 style={{color: "#fff"}}>
+        <i className="bi bi-envelope-open-fill px-2"/>agneschang0227@gmail.com
+      </h5>
       <br/>
       <div
         className="text-start p-3 text-white rounded-3"

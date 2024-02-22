@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className=" p-3 fixed-top mx-auto border-bottom navbar navbar-expand-lg navbar-light"
          style={{
-           backgroundColor: "rgba(255,255,255,0.1)",
+           backgroundColor: "rgba(0,0,0,0.2)",
            width: "90vw", height: "6vh", display: "flex",
          }}>
       <div className="collapse navbar-collapse d-flex justify-content-between align-items-center " id="navbarSupportedContent"
@@ -19,11 +19,8 @@ const Sidebar = () => {
           <li className="nav-item px-2">
             <a className="nav-link" href="#project">Projects</a>
           </li>
-          <li className="nav-item px-2">
-            <a className="nav-link " href="#resume">Resume</a>
-          </li>
           {/*<li className="nav-item px-2">*/}
-          {/*  <a className="nav-link" href="#">Contract</a>*/}
+          {/*  <a className="nav-link " href="#resume">Resume</a>*/}
           {/*</li>*/}
         </ul>
       </div>

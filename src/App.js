@@ -18,7 +18,6 @@ function App() {
            backgroundImage: `url(${imagesPath}/bg.jpg)`,
            backgroundPosition: "center", backgroundSize: "cover", height: "100vh"
          }}>
-      {/*navbar*/}
       <Sidebar/>
       {/*content*/}
       <div className="p-3 "
@@ -28,7 +27,7 @@ function App() {
            }}>
         <About id={"about"}/>
         <ProjectList id={"project"}/>
-        {/*<Resume/>*/}
+        {/*<Resume id={"resume"}/>*/}
       </div>
 
     </div>
