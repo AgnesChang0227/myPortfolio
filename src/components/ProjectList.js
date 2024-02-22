@@ -61,14 +61,14 @@ const ProjectList = () => {
 
     return (
         <div className="rounded-3 p-3 mb-3"
-             style={{height: "auto", backgroundColor: "rgba(0,0,0,0.2)"}}>
-            <div>
-                <div className="row p-2">
-                    <h1 style={{color: "white"}}>Projects</h1>
+             style={{height: "100%", backgroundColor: "rgba(0,0,0,0.2)"}}>
+            <div style={{height: "100%"}}>
+                <div className="row p-2" style={{height: "100%",overflowY: "auto"}}>
                     {/*side*/}
                     <div className="col-3 text-center p-2" style={{backgroundColor: "rgba(255,255,255,0.2)"}}>
+                        <h1 style={{color: "white",overflowY:"auto"}}>Projects</h1>
                         <div id="simple-list-example"
-                             className="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
+                             className="d-flex flex-column gap-2 simple-list-example-scrollspy text-center border-top pt-2">
                             {projects && projects.sort((a, b) => {
                                 return b.finishedDate - a.finishedDate
                             }).map((project, index) => (
@@ -78,9 +78,10 @@ const ProjectList = () => {
                         </div>
                     </div>
                     {/*content*/}
-                    <div className="col-9" style={{height: "80vh", overflowY: "auto"}}>
+                    <div className="col-9" style={{height: "100%", overflowY: "auto"}}>
                         <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0"
                              data-bs-smooth-scroll="true" className="scrollspy-example" tabIndex="0"
+                             style={{height: "100%"}}
                         >
                             {/*card*/}
                             {projects && projects.sort((a, b) => {
@@ -89,23 +90,24 @@ const ProjectList = () => {
                                 <>
                                     <div
                                         className="card mb-3 text-white background-image: var(--bs-gradient) data-mdb-attribute"
-                                        style={{width: "100%", backgroundColor: "rgba(0,0,0,0.3)"}}
+                                        style={{width: "100%",minHeight: "100%", backgroundColor: "rgba(0,0,0,0.3)"}}
                                         id={`${project.value}`}>
-                                        <div id={`${project.value}_card`} className="carousel slide"
-                                             data-bs-ride="true">
-                                            <div className="carousel-indicators"
+                                        <div id={`${project.value}_card`} className="carousel slide pt-3"
+                                             data-bs-ride="true"  style={{width: "100%"}}>
+                                            <div className="carousel-indicators mb-0"
                                                  style={{backgroundColor:"rgba(0,0,0,0.2)",borderRadius:"10px"}}>
                                                 {project.capture && project.capture.map((path, index) => {
                                                     return button(project, path, index)
                                                 })}
                                             </div>
-                                            <div className="carousel-inner justify-content-center"
-                                                 style={{minHeight:"auto",maxHeight: "60vh", overflowY: "auto"}}>
-                                                {project.capture && project.capture.map((path, index) => {
-                                                    return image(project, path, index)
-                                                })}
+                                            <div className="d-flex justify-content-center">
+                                                <div className="carousel-inner  "
+                                                     style={{height: "40%",width: "70%", overflowY: "auto"}}>
+                                                    {project.capture && project.capture.map((path, index) => {
+                                                        return image(project, path, index)
+                                                    })}
+                                                </div>
                                             </div>
-
                                             <button className="carousel-control-prev" type="button"
                                                     data-bs-target={`#${project.value}_card`}
                                                     data-bs-slide="prev">

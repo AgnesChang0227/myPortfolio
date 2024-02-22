@@ -27,7 +27,7 @@ function App() {
              border: "solid 1px transparent", borderRadius: "15px", overflowY: "auto"
            }}>
         <About/>
-        {/*<ProjectList/>*/}
+        <ProjectList/>
         {/*<Resume/>*/}
       </div>
 

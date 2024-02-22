@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       className="rounded-3 text-center p-3 mb-3"
-      style={{height: "auto"}}
+      style={{minHeight: "100%"}}
     >
       <img
         src={imagesPath + "/icon.jpeg"}
